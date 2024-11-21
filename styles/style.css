@@ -8,10 +8,9 @@
 
 .sect_path1 {
     background: #332ec9;
-    /* background: conic-gradient(from 0deg at 70% -20%, #4b18b8, #273ad3); */
 
-    /* z-index: 0; */
 }
+
 .sect_path2 {
     background: #fff;
     /* z-index: 0; */
@@ -71,10 +70,6 @@ section {
     background-color: #eff3f9;
 }
 
-.gridith_last {
-    /* margin-bottom: 380px; */
-}
-
 .image_proj {
     /* box-shadow: 0px 0px 5px black; */
     cursor: pointer;
@@ -94,6 +89,7 @@ section {
 .pollsticky {
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 999999;
 }
 
@@ -106,22 +102,28 @@ section {
     color: #fff;
 }
 
-.fort {
+.fort,
+.fort2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.fort2 {
+    gap: 55px;
+    padding-left: 119px;
 }
 
 .droping {
     width: 55vw;
     /* margin-bottom: 9920px; */
-    margin-left: -320px;
+    margin-left: -360px;
     /* height: 30vh; */
 }
 
 .droping2 {
     width: 40vw;
     /* margin-bottom: 9920px; */
-    margin-left: 320px;
+    margin-left: -420px;
     /* height: 30vh; */
 }
 
@@ -129,9 +131,42 @@ section {
     font-size: 0.9rem;
 }
 
+.hot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 200px;
+}
+
+.hot h5 {
+    width: 125%;
+}
+
 @media screen and (max-width: 1024px) {
-    * {
+    /* #tour {
+        overflow-y: scroll;
+        overflow-x: hidden;
         width: 100%;
+        height: 40vh;
+        scrollbar-width: none;
+    } */
+
+    /* header,
+section {
+    overflow: hidden;
+    scrollbar-width: none;
+} */
+
+    .fort,
+    .fort2 {
+        /* display: grid; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    .fort2 {
+        gap: 55px;
+        padding: 25px;
     }
 
     #section2,
@@ -144,8 +179,23 @@ section {
     .avec {
         font-size: 0.7rem;
     }
-}
 
+    .droping {
+        width: 55vw;
+        /* margin-bottom: 9920px; */
+        margin-left: -7px;
+        /* height: 30vh;
+        overflow: scroll;
+        scrollbar-width: none;*/
+    }
+
+    .droping2 {
+        width: 40vw;
+        /* margin-bottom: 9920px; */
+        margin-left: -7px;
+        /* height: 30vh; */
+    }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -158,16 +208,38 @@ section {
     * {
         width: initial;
     }
+
+    .hot {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    /* .hot h5 {
+        width: 125%;
+    } */
+
     header {
         overflow: hidden;
+    }
+
+    .fort2 {
+        gap: 55px;
+        padding-left: 39px;
+        padding-right: 39px;
+        /* grid-template-columns: repeat(1, 1fr); */
+    }
+
+    .fort,
+    .fort2 {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
     }
 
     #tour {
         overflow-y: scroll;
         overflow-x: hidden;
         width: 100%;
-        /* padding: 0; */
-        height: 40vh;
+        height: 10rem;
         scrollbar-width: none;
     }
 
@@ -190,11 +262,6 @@ section {
     .droping2 {
         width: 90vw;
         margin-left: 0;
-    }
-
-    .fort {
-        /* display: grid; */
-        grid-template-columns: repeat(1, 1fr);
     }
 
 
